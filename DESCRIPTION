@@ -1,0 +1,13 @@
+Package: SoFRCond
+Type: Package
+Title: Scalar-on-functional regression (SoFR) with conditional model specifications (under spatial dependence)
+Version: 1.0
+Date: 2025-10-27
+Author: Sooran Kim
+Maintainer: Sooran Kim <Sooran.Kim@nyulangone.org>
+Description: The package provides functions for parameter estimation of two models (i) a Conditional Autoregressive (CAR) model with functional covariates, and (ii) a binary conditional model with functional covariates. The functions also compute p-values for hypothesis tests of the null hypothesis spatial dependence parameter= 0 and/or beta = 0.
+License: GPL-3
+Imports: Rcpp (>= 1.0.13-1)
+LinkingTo: Rcpp, RcppArmadillo, testthat
+Suggests: xml2
+RoxygenNote: 7.3.2
