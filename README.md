@@ -2,13 +2,13 @@ The package implements the estimation and inference procedures proposed in:
 Kim, S., (2026+). Scalar-on-functional regression with conditional model specifications under spatial dependence.
 
 To install and load the package:
-```
+```r
 devtools::install_github("srkim3487/SoFRCond")
 library(SoFRCond)
 ```
 Below is an example using the included simulated dataset. For details on each function, please refer to the corresponding help page.
 
-```
+```r
 # Load example data included in the package
 data(CAR_data)
 t <- CAR_data$t; X <- CAR_data$X; y <- CAR_data$y; nbd_index <- CAR_data$nbd_index
