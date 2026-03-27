@@ -1,4 +1,5 @@
 The package implements the estimation and inference procedures proposed in:
+
 Kim, S., (2026+). Scalar-on-functional regression with conditional model specifications under spatial dependence.
 
 To install and load the package:
