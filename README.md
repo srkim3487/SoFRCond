@@ -28,5 +28,5 @@ t <- binary_data$t; X <- binary_data$X; y <- binary_data$y; nbd_index <- binary_
 res_binary_iid <- SoFR_binary_iid_fun(t, X, y, nbd_index = NULL, alphaHat = 0, betaHat = rep(0, length(t)))
 
 # Binary conditional model with functional covariate under spatial dependence 
-res_spa <- SoFR_binary_spa_fun(t, X, y, nbd_index, etaHat = 0.3, alphaHat = 0, betaHat = res_binary_iid$betaHat)
+res_binary_spa <- SoFR_binary_spa_fun(t, X, y, nbd_index, etaHat = 0.3, alphaHat = 0, betaHat = res_binary_iid$betaHat)
 ```
