@@ -82,7 +82,7 @@ SoFR_conti_iid_fun <- function(t, X, y, num_nei, alphaHat = 0, betaHat, sigma2Ha
     lambda <- eig$values * diff(range(t)) / m
     phi <- eig$vectors / sqrt(diff(range(t) / m))
     FVE <- cumsum(lambda / sum(lambda))
-    p <- which(FVE > 0.95)[1]
+    p <- which(FVE > 0.9)[1]
     
     beta_temp = sapply(1:p, function(j){
       (lambda[j])^(-1) * as.numeric(phi[,j] %*% R_total * diff(range(t))/m) * phi[,j]})
